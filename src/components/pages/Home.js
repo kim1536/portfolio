@@ -7,9 +7,9 @@ import styled from "styled-components";
 function Home() {
 	return (
 		<StyledDiv>
-			<MainMenu page="home" />
-			<HomeTxtWrap />
 			<Preloader />
+			<HomeTxtWrap />
+			<MainMenu page="home" />
 		</StyledDiv>
 	);
 } 
