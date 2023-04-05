@@ -3,14 +3,13 @@ const portfolioData = {
 		{
 			name: "일본 북양은행 데이터 마이그레이션",
 			period: "2021.10 - 2021.11",
-			logo: "",
 			link: "",
 			description: ".일본 북양은행 담당자와 회의를 통해 고객으로부터 받은 csv파일을 가지고  데이터 마이그레이션",
 			tech: ["JAVA", "Docker", "MySQL", "GitHub"],
 		},
 		{
 			name: "모멘토 (개발 임시 중단)",
-			logo: "",
+			logo: "momentor",
 			period: "2022.01 - 2022.10",
 			link:'https://mockup.momentorapps.com/company/dashboard/employment',
 			description: "장애인과 기업의 구직 채용 연계 서비스입니다."
@@ -22,7 +21,7 @@ const portfolioData = {
 		},
 		{
 			name: "회사(가치와 여유) 홈페이지",
-			logo: "",
+			logo: "company",
 			period: "2022.05 - 2022.05",
 			link:'https://www.gcnyy.com/',
 			description: "회사 홈페이지 제작",
@@ -30,7 +29,6 @@ const portfolioData = {
 		},
 		{
 			name: "Locale 도입",
-			logo: "",
 			period: "2022.10 - 2022.10",
 			link: "",
 			description: "기존 솔루션의 언어팩 추가",
@@ -38,7 +36,6 @@ const portfolioData = {
 		},
 		{
 			name: "AML 불법자금세탁방지 솔루션",
-			logo: "",
 			period: "2022.10 - 2023.4",
 			link: "",
 			description: "1. 업무처리건수 따른 일, 월, 년단위로 막대그래프로 확인 가능하도록 구현. "

@@ -37,7 +37,7 @@ const skillData = {
 			period: "2020.11 - 2021.06",
 			position: "JAVA WEB Programming 과정",
 			company: "코세아인재개발원",
-			explain: "Java, Jsp&Servlet, Spring, iBatis, oracle SQL등을 배웠으며 MVC패턴으로 WEB 개발 및 기술을 습득하였습니다. ",
+			explain: "Java, Jsp&Servlet, Spring, iBatis, oracle SQL등을 배웠으며 MVC패턴으로 WEB 개발 및 기술을 습득하였습니다.",
 		},
 	],
 };

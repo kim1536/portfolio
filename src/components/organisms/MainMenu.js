@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function Header(props) {
+function MainMenu(props) {
 	const [Load, setLoad] = useState(false);
 	useEffect(() => {
 		setTimeout(() => {
@@ -116,4 +116,4 @@ const StyledHeader = styled.header`
 	}
 `;
 
-export default Header;
+export default MainMenu;

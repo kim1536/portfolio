@@ -1,20 +1,18 @@
-import React, { Component } from "react";
-import Header from "../organisms/Header";
+import React from "react";
+import MainMenu from "../organisms/MainMenu";
 import Preloader from "../molecules/Preloader";
 import HomeTxtWrap from "../organisms/HomeTxtWrap";
 import styled from "styled-components";
 
-export class Home extends Component {
-	render() {
-		return (
-			<StyledDiv>
-				<Header page="home" />
-				<HomeTxtWrap />
-				<Preloader />
-			</StyledDiv>
-		);
-	} 
-}
+function Home() {
+	return (
+		<StyledDiv>
+			<MainMenu page="home" />
+			<HomeTxtWrap />
+			<Preloader />
+		</StyledDiv>
+	);
+} 
 
 export default Home;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../organisms/Header";
+import MainMenu from "../organisms/MainMenu";
 import Preloader from "../molecules/Preloader";
 
 function PageWrap(props) {
@@ -8,7 +8,7 @@ function PageWrap(props) {
 	return (
 		<div>
 			<Preloader />
-			<Header page={props.page} />
+			<MainMenu page={props.page} />
 			<>{children}</>
 		</div>
 	);
