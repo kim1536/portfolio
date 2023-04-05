@@ -19,6 +19,6 @@ export default Home;
 const StyledDiv = styled.div`
 	overflow: hidden;
 	@media ${(props) => props.theme.mobile} {
-		overflow: auto;
+		overflow: auto; 
 	}
 `;
