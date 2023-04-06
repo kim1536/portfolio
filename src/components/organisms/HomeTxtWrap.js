@@ -34,7 +34,7 @@ function HomeTxtWrap() {
 							<span>Age : </span>30, 1993.03
 						</li>
 						<li>
-							<span>Address : </span>서울시 은평구
+							<span>Address : </span>서울시 동작구
 						</li>
 						<li>
 							<span>Email : </span>rnjsdlf0322@gmail.com
