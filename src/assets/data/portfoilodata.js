@@ -8,7 +8,7 @@ const portfolioData = {
 			tech: ["JAVA", "Docker", "MySQL", "GitHub"],
 		},
 		{
-			name: "모멘토 (개발 임시 중단)",
+			name: "모멘토 (데모)",
 			logo: "momentor",
 			period: "2022.01 - 2022.10",
 			link:'https://mockup.momentorapps.com/company/dashboard/employment',
