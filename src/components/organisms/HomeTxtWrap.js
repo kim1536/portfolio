@@ -101,17 +101,17 @@ const messageslideMo = keyframes`
 		top: 0;
 		width: 0;
 	}
-	60% {
-		top: -4.5rem;
+	65% {
+		top: -3.5rem;
 	}
-	61% {
+	66% {
 		width: 0;
 	}
 	75% {
 		width: 100%;
 	}
 	99% {
-		top: -4.5rem;
+		top: -3.5rem;
 		width: 0;
 	}
 	100% {
@@ -121,7 +121,6 @@ const messageslideMo = keyframes`
 `;
 const StyledHome = styled.main`
 	display: flex;
-	height: 100vh;
 	max-width: 1600px;
 	margin: auto;
 	.left {
@@ -144,6 +143,7 @@ const StyledHome = styled.main`
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		z-index: 1;
 		padding: 0 10% 0 7%;
 		.tit-wrap {
 			margin-bottom: 60px;
@@ -165,6 +165,11 @@ const StyledHome = styled.main`
 					left: 80px;
 					animation: ${messageslide} 8s ease-in-out infinite;
 					strong {
+						text-shadow:
+								-1px -1px 0 #000030, 
+								1px -1px 0 #000030, 
+								-1px 1px 0 #000030, 
+								1px 1px 0 #000030;
 						display: block;
 						color: ${(props) => props.theme.mainColor};
 					}
@@ -175,6 +180,7 @@ const StyledHome = styled.main`
 				line-height: 1.6;
 				padding: 0 15% 0 0;
 				max-width: 670px;
+				font-weight: 600;
 				word-break: keep-all;
 			}
 		}
@@ -217,8 +223,8 @@ const StyledHome = styled.main`
 		.left {
 			.color-block {
 				top: -65%;
-				left: -25vw;
-				width: 40vw;
+				left: -45vw;
+				width: 60vw;
 				height: 190%;
 				transform: rotate(35deg);
 			}
@@ -251,10 +257,10 @@ const StyledHome = styled.main`
 			width: 100%;
 			overflow: hidden;
 			.color-block {
-				top: -135%;
-				left: -900px;
-				width: 600px;
-				transform: rotate(-55deg);
+				top: -80%;
+				left: -50%;
+				width: 70vw;
+				transform: rotate(25deg);
 			}
 		}
 		.right {
