@@ -1,22 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Heading from "../atoms/Heading";
 
 function PageHeader(props) {
 	const { children } = props;
 
-	const [Load, setLoad] = useState(false);
-	useEffect(() => {
-		setTimeout(() => {
-			setLoad(true);
-		}, 450);
-		return () => setLoad(false);
-	}, []);
-
 	return (
 		<StyledPageHeader>
 			<Heading>{children}</Heading>
-			<span className={`title-bg${Load ? " on" : ""}`}>{props.titleBg}</span>
+			<span className="title-bg">{props.titleBg}</span>
 		</StyledPageHeader>
 	);
 }
@@ -34,7 +26,7 @@ const StyledPageHeader = styled.div`
 	.title-bg {
 		font-size: 110px;
 		left: 0;
-		letter-spacing: 60px;
+		letter-spacing: 10px;
 		position: absolute;
 		right: 0;
 		top: 50%;
@@ -42,10 +34,6 @@ const StyledPageHeader = styled.div`
 		font-weight: 800;
 		transform: translateY(-53%);
 		opacity: 0.07;
-		&.on {
-			transition: all 1.1s;
-			letter-spacing: 10px;
-		}
 	}
 	@media ${(props) => props.theme.tablet} {
 		padding: 60px 0px 60px 0px;
@@ -59,8 +47,6 @@ const StyledPageHeader = styled.div`
 		.title-bg {
 			font-size: 80px;
 			letter-spacing: 20px;
-			&.on {
-			}
 		}
 	}
 `;

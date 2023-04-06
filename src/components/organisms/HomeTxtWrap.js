@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Heading from "../atoms/Heading";
 
-function AboutTxtWrap() {
+function HomeTxtWrap() {
 	return (
 		<StyledHome>
 			<div className="left">
@@ -216,11 +216,11 @@ const StyledHome = styled.main`
 	@media ${(props) => props.theme.laptop} {
 		.left {
 			.color-block {
-				top: -60%;
+				top: -65%;
 				left: -25vw;
 				width: 40vw;
-				height: 200%;
-				transform: rotate(-9deg);
+				height: 190%;
+				transform: rotate(35deg);
 			}
 		}
 		.right {
@@ -251,10 +251,10 @@ const StyledHome = styled.main`
 			width: 100%;
 			overflow: hidden;
 			.color-block {
-				left: -40vw;
-				width: 80vw;
-				min-width: 250px;
-				transform: rotate(-12deg);
+				top: -135%;
+				left: -900px;
+				width: 600px;
+				transform: rotate(-55deg);
 			}
 		}
 		.right {
@@ -281,4 +281,4 @@ const StyledHome = styled.main`
 	}
 `;
 
-export default AboutTxtWrap;
+export default HomeTxtWrap;
