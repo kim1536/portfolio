@@ -3,30 +3,68 @@ import styled from "styled-components";
 
 function MainMenu() {
 	const [Load, setLoad] = useState(false);
-	const [pages, setPages] = useState('home')
+	const [pages1, setPages1] = useState(true)
+	const [pages2, setPages2] = useState(false)
+	const [pages3, setPages3] = useState(false)
+	const [scrollPosition, setScrollPosition] = useState(0);
+
 	useEffect(() => {
 		setTimeout(() => {
 			setLoad(true);
 		}, 700);
 		return () => setLoad(false);
 	}, []);
+
+	useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 	
+	useEffect(() => {
+		const about = document.getElementById('about');
+		const projects = document.getElementById('projects');
+		const aboutElTop = about.offsetTop;
+		const projectsElTop = projects.offsetTop;
+		
+		if (scrollPosition <= (aboutElTop/2)) {
+			setPages1(true)
+    }
+		else {
+			setPages1(false)
+		}
+    if (scrollPosition >= (aboutElTop/2)) {
+			setPages2(true)
+    }
+		else {
+			setPages2(false)
+		}
+		if(scrollPosition >= (projectsElTop/2)){
+			setPages3(true)
+			setPages2(false)
+		}else {
+			setPages3(false)
+		}
+  }, [scrollPosition]);
+
 	return (
 		<StyledHeader className={`${Load ? "on" : ""}`}>
 			<ul>
-				<li onClick={() => setPages('home')} className={pages === "home" ? "active" : ""}>
+				<li className={pages1 ? "active" : ""}>
 					<a href="#home">
 						<span>Home</span>
 						<i className="fas fa-home"></i>
 					</a>
 				</li>
-				<li onClick={() => setPages('about')} className={pages === "about" ? "active" : ""}>
+				<li className={pages2 ? "active" : ""}>
 					<a href="#about">
 						<span>About</span>
 						<i className="fas fa-user"></i>
 					</a>
 				</li>
-				<li onClick={() => setPages('projects')} className={pages === "projects" ? "active" : ""}>
+				<li className={pages3 ? "active" : ""}>
 					<a href="#projects">
 						<span>Projects</span>
 						<i className="fas fa-tasks"></i>
