@@ -125,30 +125,17 @@ const StyledHome = styled.main`
 	max-width: 1600px;
 	margin: auto;
 	.left {
-		flex: 0 0 35%;
-		position: relative;
+		flex: 0 0 25%;
 		max-width: 600px;
 		background-color: #000030;
-		&::after {
-			content: "";
-			display: inline-block;
-			position: fixed;
-			top: 0;
-			left: calc(50% - 1440px);
-			z-index: -1;
-			width: 50%;
-			max-width: 1000px;
-			height: 100%;
-			background-color: ${(props) => props.theme.mainColor};
-		}
 		.color-block {
 			position: absolute;
-			top: -60%;
+			top: -55%;
 			left: -30vw;
 			z-index: 0;
 			width: 50vw;
-			height: 200%;
-			transform: rotate(20deg);
+			height: 160%;
+			transform: rotate(35deg);
 			background-color: ${(props) => props.theme.mainColor};
 		}
 	}

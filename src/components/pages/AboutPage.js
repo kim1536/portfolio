@@ -4,27 +4,26 @@ import Heading from "../atoms/Heading";
 import PageHeader from "../molecules/PageHeader";
 import ExperienceWrap from "../organisms/ExperienceWrap";
 import SkillsWrap from "../organisms/SkillsWrap";
-import PageWrap from "../templates/PageWrap";
 
 function aboutPage() {
 return (
-	<PageWrap page="about">
-		<StyledSkills>
-			<PageHeader titleBg="Skills">
-				About <span className="point">Me</span>
-			</PageHeader>
+	
+	<StyledSkills id='about'>
+		<PageHeader titleBg="Skills">
+			About <span className="point">Me</span>
+		</PageHeader>
 
-			<section>
-				<Heading level="2">MY SKILLS</Heading>
-				<SkillsWrap />
-			</section>
+		<section>
+			<Heading level="2">MY SKILLS</Heading>
+			<SkillsWrap />
+		</section>
 
-			<section>
-				<Heading level="2">EDUCATION</Heading>
-				<ExperienceWrap />
-			</section>
-		</StyledSkills>
-	</PageWrap>
+		<section>
+			<Heading level="2">EDUCATION</Heading>
+			<ExperienceWrap />
+		</section>
+	</StyledSkills>
+	
 );
 }
 

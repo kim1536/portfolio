@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-function MainMenu(props) {
+function MainMenu() {
 	const [Load, setLoad] = useState(false);
+	const [pages, setPages] = useState('home')
 	useEffect(() => {
 		setTimeout(() => {
 			setLoad(true);
@@ -14,23 +14,23 @@ function MainMenu(props) {
 	return (
 		<StyledHeader className={`${Load ? "on" : ""}`}>
 			<ul>
-				<li className={props.page === "home" ? "active" : ""}>
-					<Link to="/">
+				<li onClick={() => setPages('home')} className={pages === "home" ? "active" : ""}>
+					<a href="#home">
 						<span>Home</span>
 						<i className="fas fa-home"></i>
-					</Link>
+					</a>
 				</li>
-				<li className={props.page === "about" ? "active" : ""}>
-					<Link to="/about">
+				<li onClick={() => setPages('about')} className={pages === "about" ? "active" : ""}>
+					<a href="#about">
 						<span>About</span>
 						<i className="fas fa-user"></i>
-					</Link>
+					</a>
 				</li>
-				<li className={props.page === "projects" ? "active" : ""}>
-					<Link to="/projects">
+				<li onClick={() => setPages('projects')} className={pages === "projects" ? "active" : ""}>
+					<a href="#projects">
 						<span>Projects</span>
 						<i className="fas fa-tasks"></i>
-					</Link>
+					</a>
 				</li>
 				<li>
 					{/* eslint-disable-next-line react/jsx-no-target-blank */}
