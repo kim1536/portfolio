@@ -8,7 +8,7 @@ function HistoryWrap() {
 	const historyList = data.historyList.map((list, idx) => (
 		<li key={idx}>
 			<div className="icon">
-				{(data.historyList.length -1) === idx ? <i className="fa fa-user-secret"></i> : <i className="fas fa-graduation-cap"></i>}
+				{(data.historyList.length -1) === idx ? <i className="fa-solid fa-person-military-rifle"></i>: <i className="fas fa-graduation-cap"></i>}
 				
 			</div>
 			<span className="time">{list.period}</span>

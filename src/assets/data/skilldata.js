@@ -30,6 +30,11 @@ const skillData = {
 			detail: ["git flow가 무엇인지 알고 있으며 왜 사용해야 하는지 이해하고 있습니다.", "깃과 깃헙을 사용하여 다른 개발자들과 협업을 할 수 있습니다."],
 			icon: "fab fa-git-square",
 		},
+		{
+			label: "AWS",
+			detail: ["웹 클라우드 서버를 구축하기 위한 전체적인 흐름을 이해하고 있습니다.", "S3 & CloudFront & Route 53을 활용한 정적 웹 호스팅이 가능합니다."],
+			icon: "fa-brands fa-aws",
+		},
 	],
 
 	educationList: [
