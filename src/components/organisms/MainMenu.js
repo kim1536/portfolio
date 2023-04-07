@@ -35,13 +35,13 @@ function MainMenu() {
 		else {
 			setPages1(false)
 		}
-    if (scrollPosition >= (aboutElTop/2)) {
+    if (scrollPosition >= (aboutElTop*0.5)) {
 			setPages2(true)
     }
 		else {
 			setPages2(false)
 		}
-		if(scrollPosition >= (projectsElTop/2)){
+		if(scrollPosition >= (projectsElTop*0.9)){
 			setPages3(true)
 			setPages2(false)
 		}else {

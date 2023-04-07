@@ -18,10 +18,26 @@ function ExperienceWrap() {
 			<p>{list.explain}</p>
 		</li>
 	));
+
+	const certificateList = data.certificateList.map((list, idx) => (
+		<li key={idx}>
+			<div className="icon">
+				<i className="fa fa-id-card-o"></i>
+			</div>
+			<span className="time">{list.period}</span>
+			<Heading level="4">
+				{list.position}
+				<span className="place">{list.company}</span>
+			</Heading>
+		</li>
+	));
 	return (
 		<StyledExpWrap>
 			<div className="education">
 				<ul>{educationList}</ul>
+			</div>
+			<div className="certificate">
+				<ul>{certificateList}</ul>
 			</div>
 		</StyledExpWrap>
 	);

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Heading from "../atoms/Heading";
 import PageHeader from "../molecules/PageHeader";
 import ExperienceWrap from "../organisms/ExperienceWrap";
+import HistoryWrap from "../organisms/HistoryWrap";
 import SkillsWrap from "../organisms/SkillsWrap";
 
 function aboutPage() {
@@ -19,8 +20,13 @@ return (
 		</section>
 
 		<section>
-			<Heading level="2">EDUCATION</Heading>
+			<Heading level="2">EDUCATION & CERTIFICATE</Heading>
 			<ExperienceWrap />
+		</section>
+
+		<section>
+			<Heading level="2">History</Heading>
+			<HistoryWrap />
 		</section>
 	</StyledSkills>
 	

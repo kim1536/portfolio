@@ -40,6 +40,19 @@ const skillData = {
 			explain: "Java, Jsp&Servlet, Spring, iBatis, oracle SQL등을 배웠으며 MVC패턴으로 WEB 개발 및 기술을 습득하였습니다.",
 		},
 	],
+	
+	certificateList: [
+		{
+			period: "2017.07",
+			position: "한국어능력시험 TOPIK II (고급)",
+			company: "교육부 국립국제교육원",
+		},
+		{
+			period: "2021.06",
+			position: "정보처리기사",
+			company: "한국산업인력공단",
+		},
+	],
 };
 
 export default skillData;
