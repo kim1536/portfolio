@@ -60,8 +60,8 @@ const StyledSkillsWrap = styled.div`
 			}
 		}
 		img {
-			width: 50px;
-			height: 50px;
+			width: 55px;
+			height: 55px;
 			vertical-align: text-top;
 			padding-right: 10px;
 		}
