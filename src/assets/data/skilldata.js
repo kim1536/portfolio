@@ -17,7 +17,7 @@ const skillData = {
 		},
 		{
 			label: "React",
-			detail: ["컴포넌트 생명주기와 속성을 사용할 수 있습니다.", "recoil를 사용하여 상태관리를 할 수 있습니다."],
+			detail: ["컴포넌트 생명주기와 속성을 사용할 수 있습니다.", "recoil과 React Query를 사용하여 상태관리를 할 수 있습니다.", "StoryBook이용하여  UI 컴포넌트 구현이 가능합니다."],
 			icon: "fab fa-react",
 		},
 		{
@@ -34,6 +34,10 @@ const skillData = {
 			label: "AWS",
 			detail: ["웹 클라우드 서버를 구축하기 위한 전체적인 흐름을 이해하고 있습니다.", "S3 & CloudFront & Route 53을 활용한 정적 웹 호스팅이 가능합니다."],
 			icon: "fa-brands fa-aws",
+		},
+		{
+			label: "NestJS",
+			detail: ["NestJS가 작동하는 법에 대해 이해하고 있습니다.","모델, 컨트롤러, 서비스를 나누어 구조화된 서버를 만들 수 있습니다."],
 		},
 	],
 

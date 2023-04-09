@@ -7,9 +7,11 @@ function SkillsWrap() {
 	const skillsList = data.skillList.map((list, idx) => (
 		<div className="skill-list" key={idx}>
 			<Heading level="3" className="skill-label">
-				<i className={list.icon}></i>: {list.label}
+				{
+					list.icon === undefined ?  <img src={`${process.env.PUBLIC_URL}/images/logo/nestjs.svg`} alt=''/> : <i className={list.icon}></i>
+				}
+				: {list.label}
 			</Heading>
-
 			<ul className="skill-detail">
 				{list.detail.map((detail, idx) => (
 					<li key={idx}>{detail}</li>
@@ -56,6 +58,11 @@ const StyledSkillsWrap = styled.div`
 					background: ${(props) => props.theme.mainColor};
 				}
 			}
+		}
+		img {
+			width: 50px;
+			height: 50px;
+			vertical-align: text-top;
 		}
 	}
 	@media ${(props) => props.theme.laptop} {

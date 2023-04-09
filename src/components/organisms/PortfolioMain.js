@@ -67,7 +67,7 @@ function PortfolioMain () {
 				</div>
 				<div className="logoWrap">
 					<div className="logo">
-						{list.logo === undefined ? <p>이동할 URL이 없습니다.</p>: <img src={`./images/logo/${list.logo}.png`} alt="" />}
+						{list.logo === undefined ? <p>이동할 URL이 없습니다.</p>: <img src={`${process.env.PUBLIC_URL}/images/logo/${list.logo}.png`} alt="" />}
 					</div>
 				</div>
 			</span>
@@ -164,7 +164,6 @@ const outLeft = keyframes`
 		left:-100%;
 	}
 `;
-
 const StyledPortWrap = styled.div`
 	width: 85%;
 	max-width: 1140px;
@@ -315,5 +314,6 @@ const StyledPortWrap = styled.div`
 		}
 	}
 `;
+
 
 export default PortfolioMain;
