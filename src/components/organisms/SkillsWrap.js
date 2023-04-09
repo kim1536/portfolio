@@ -63,6 +63,7 @@ const StyledSkillsWrap = styled.div`
 			width: 50px;
 			height: 50px;
 			vertical-align: text-top;
+			padding-right: 10px;
 		}
 	}
 	@media ${(props) => props.theme.laptop} {
