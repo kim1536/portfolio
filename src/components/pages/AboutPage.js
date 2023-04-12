@@ -5,6 +5,7 @@ import PageHeader from "../molecules/PageHeader";
 import ExperienceWrap from "../organisms/ExperienceWrap";
 import HistoryWrap from "../organisms/HistoryWrap";
 import SkillsWrap from "../organisms/SkillsWrap";
+import LanguageSkillsWrap from "../organisms/LanguageSkillsWrap";
 
 function aboutPage() {
 return (
@@ -17,6 +18,11 @@ return (
 		<section>
 			<Heading level="2">MY SKILLS</Heading>
 			<SkillsWrap />
+		</section>
+
+		<section>
+			<Heading level="2">LANGUAGE SKILLS</Heading>
+			<LanguageSkillsWrap />
 		</section>
 
 		<section>

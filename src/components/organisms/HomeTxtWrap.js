@@ -10,14 +10,14 @@ function HomeTxtWrap() {
 			</div>
 			<div className="right">
 				<div className="tit-wrap">
-					<Heading level="2">HI! HOW ARE YOU?</Heading>
 					<Heading>
-						I'M{" "}
+						HI! I'M
 						<span className="message">
 							<strong>KWONIL KIM</strong>
 							<strong>WEB DEVELOPER</strong>
 						</span>
 					</Heading>
+					<Heading level="2">2년차 웹개발자 입니다.</Heading>
 					<p>
 						안녕하세요. 고등학교까지 일본에서 생활 해 온 김권일입니다.
 						<br />
@@ -168,7 +168,7 @@ const StyledHome = styled.main`
 					overflow: hidden;
 					position: absolute;
 					top: 0;
-					left: 80px;
+					left: 150px;
 					animation: ${messageslide} 8s ease-in-out infinite;
 					strong {
 						text-shadow:
@@ -278,7 +278,7 @@ const StyledHome = styled.main`
 				h1 {
 					font-size: 35px;
 					.message {
-						left: 60px;
+						left: 110px;
 						animation: ${messageslideMo} 8s ease-in-out infinite;
 					}
 				}

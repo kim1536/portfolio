@@ -3,19 +3,14 @@ import data from "../../assets/data/skilldata";
 import styled from "styled-components";
 import Heading from "../atoms/Heading";
 
-function SkillsWrap() {
-	const skillsList = data.skillList.map((list, idx) => (
+function LanguageSkillsWrap() {
+	const skillsList = data.languageList.map((list, idx) => (
 		<div className="skill-list" key={idx}>
 			<Heading level="3" className="skill-label">
-				{
-					list.icon === undefined ?  <img src={`${process.env.PUBLIC_URL}/images/logo/nestjs.svg`} alt=''/> : <i className={list.icon}></i>
-				}
-				: {list.label}
+				 {list.label}
 			</Heading>
 			<ul className="skill-detail">
-				{list.detail.map((detail, idx) => (
-					<li key={idx}>{detail}</li>
-				))}
+				<li>{list.level}</li>
 			</ul>
 		</div>
 	));
@@ -48,9 +43,8 @@ const StyledSkillsWrap = styled.div`
 		.skill-detail {
 			li {
 				position: relative;
-				padding: 0 0 10px 30px;
+				padding: 0 0 0 30px;
 				font-size: 14px;
-				line-height: 1.5;
 				color: rgb(255 255 255 / 80%);
 				&::before {
 					content: "";
@@ -125,4 +119,4 @@ const StyledSkillsWrap = styled.div`
 	}
 `;
 
-export default SkillsWrap;
+export default LanguageSkillsWrap;

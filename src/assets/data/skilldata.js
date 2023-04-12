@@ -41,6 +41,17 @@ const skillData = {
 		},
 	],
 
+	languageList: [
+		{
+			label: "한국어",
+			level: "중상급",
+		},
+		{
+			label: "일본어",
+			level: "네이티브",
+		},
+	],
+
 	educationList: [
 		{
 			period: "2020.11 - 2021.06",
