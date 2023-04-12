@@ -8,7 +8,7 @@ function SkillsWrap() {
 		<div className="skill-list" key={idx}>
 			<Heading level="3" className="skill-label">
 				{
-					list.icon === undefined ?  <img src={`${process.env.PUBLIC_URL}/images/logo/nestjs.svg`} alt=''/> : <i className={list.icon}></i>
+					list.icon === undefined ?  <img src={`${process.env.PUBLIC_URL}/images/logo/${list.img}.svg`} alt=''/> : <i className={list.icon}></i>
 				}
 				: {list.label}
 			</Heading>

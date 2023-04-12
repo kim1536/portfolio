@@ -31,7 +31,7 @@ return (
 		</section>
 
 		<section>
-			<Heading level="2">History</Heading>
+			<Heading level="2">HISTORY</Heading>
 			<HistoryWrap />
 		</section>
 	</StyledSkills>

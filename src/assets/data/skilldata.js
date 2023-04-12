@@ -38,6 +38,7 @@ const skillData = {
 		{
 			label: "NestJS",
 			detail: ["NestJS가 작동하는 법에 대해 이해하고 있습니다.","모델, 컨트롤러, 서비스를 나누어 구조화된 서버를 만들 수 있습니다."],
+			img:"nestjs"
 		},
 	],
 
@@ -45,10 +46,12 @@ const skillData = {
 		{
 			label: "한국어",
 			level: "중상급",
+			img:"hangul",
 		},
 		{
 			label: "일본어",
 			level: "네이티브",
+			img:"hiragana",
 		},
 	],
 

@@ -1,14 +1,13 @@
 import React from "react";
 import data from "../../assets/data/skilldata";
 import styled from "styled-components";
-import Heading from "../atoms/Heading";
 
 function LanguageSkillsWrap() {
 	const skillsList = data.languageList.map((list, idx) => (
 		<div className="skill-list" key={idx}>
-			<Heading level="3" className="skill-label">
-				 {list.label}
-			</Heading>
+			<div className="skill-label">
+				<img src={`${process.env.PUBLIC_URL}/images/logo/${list.img}.svg`} alt=''/> : {list.label}
+				</div>
 			<ul className="skill-detail">
 				<li>{list.level}</li>
 			</ul>
@@ -32,36 +31,33 @@ const StyledSkillsWrap = styled.div`
 		border-radius: 5px;
 		cursor: default;
 		.skill-label {
+			display: flex;
+			align-items: center;
+			font-size: 20px;
 			margin-bottom: 10px;
 			i {
-				color: ${(props) => props.theme.mainColor};
-				padding-right: 10px;
-				font-size: 50px;
+				width: 55px;
+				height: 55px;
 				vertical-align: text-top;
+				padding-right: 10px;
 			}
 		}
 		.skill-detail {
 			li {
 				position: relative;
-				padding: 0 0 0 30px;
-				font-size: 14px;
+				padding: 0 0 0 20px;
+				font-size: 16px;
 				color: rgb(255 255 255 / 80%);
 				&::before {
 					content: "";
 					position: absolute;
 					left: 0;
-					top: 13px;
-					width: 20px;
+					top: 11px;
+					width: 10px;
 					height: 1px;
 					background: ${(props) => props.theme.mainColor};
 				}
 			}
-		}
-		img {
-			width: 55px;
-			height: 55px;
-			vertical-align: text-top;
-			padding-right: 10px;
 		}
 	}
 	@media ${(props) => props.theme.laptop} {
